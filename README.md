@@ -1,5 +1,6 @@
 I went with an MVVM architecture and xml layouts. I'm just the most comfortable with xml layouts right now.
 I also decided to utilize dependency injection, which makes things much easier down the road.
+I spent about 2 hours on this. It was on the longer side because I decided to use dependency injection and a fragment/viewmodel to better facilitate testing.
 
 ## Build tools & versions used
 Android Studio Hedgehog
