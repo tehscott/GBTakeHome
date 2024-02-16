@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GBTakeHome</string>
+    <string name="retry">Retry</string>
+    <string name="error_message">Sorry, there was an issue getting the guide list!</string>
+    <string name="ok">Ok</string>
+    <string name="guide_icon">Guide icon</string>
+    <string name="list_empty_state_message">No guides were found ಠ_ಠ</string>
+</resources>
