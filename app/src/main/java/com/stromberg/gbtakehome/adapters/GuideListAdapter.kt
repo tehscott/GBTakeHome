@@ -39,7 +39,7 @@ class GuideListAdapter : ListAdapter<Guide, GuideListAdapter.ViewHolder>(DiffUti
             holder.url.text = guide.url
             holder.venue.text = guide.venue?.let { "${it.city}, ${it.city}" }
             holder.venue.isVisible = guide.venue?.city?.isNotEmpty() == true
-                    && guide.venue?.state?.isNotEmpty() == true
+                    && guide.venue.state?.isNotEmpty() == true
         }
     }
 

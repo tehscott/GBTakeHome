@@ -1,3 +1,6 @@
+I went with an MVVM architecture and xml layouts. I'm just the most comfortable with xml layouts right now.
+I also decided to utilize dependency injection, which makes things much easier down the road.
+
 ## Build tools & versions used
 Android Studio Hedgehog
 kotlin version 1.9.10
@@ -13,8 +16,3 @@ Fragment-ktx 1.6.2
 Hilt 2.50
 Livedata 2.7.0
 Glide 4.16.0
-
-## Is there any other information you’d like us to know?
-
-I went with an MVVM architecture and xml layouts. I'm just the most comfortable with xml layouts right now.
-I also decided to utilize dependency injection, which makes things much easier down the road.

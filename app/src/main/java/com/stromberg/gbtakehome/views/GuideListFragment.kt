@@ -9,6 +9,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.stromberg.gbtakehome.BuildConfig
 import com.stromberg.gbtakehome.GuideRepository
 import com.stromberg.gbtakehome.R
 import com.stromberg.gbtakehome.adapters.GuideListAdapter
@@ -48,6 +49,8 @@ class GuideListFragment : Fragment() {
         viewModel.guides.observe(viewLifecycleOwner) { guides ->
             handleGuides(guides)
         }
+
+        binding.buildText.text = BuildConfig.BUILD_TYPE
 
         binding.swipeRefreshLayout.isRefreshing = true
         viewModel.fetchGuides()

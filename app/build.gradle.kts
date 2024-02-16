@@ -27,6 +27,14 @@ android {
                 "proguard-rules.pro"
             )
         }
+        create("Build A") {
+            isDebuggable = true
+            signingConfig = signingConfigs.getByName("debug")
+        }
+        create("Build B") {
+            isDebuggable = true
+            signingConfig = signingConfigs.getByName("debug")
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -37,6 +45,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
     // Allow references to generated code
     kapt {

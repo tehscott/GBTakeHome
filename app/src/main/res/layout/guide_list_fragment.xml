@@ -15,16 +15,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/build_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Build X" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/list"
                 android:name="com.stromberg.gbtakehome.MainFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:clipToPadding="false"
                 android:paddingTop="16dp"
                 android:paddingBottom="56dp"
                 android:visibility="gone"
                 app:layoutManager="LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/build_text"
                 tools:context=".views.GuideListFragment"
                 tools:listitem="@layout/guide_list_item" />
         </androidx.constraintlayout.widget.ConstraintLayout>
