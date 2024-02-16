@@ -52,6 +52,13 @@ dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
+    // Mockito
+    testImplementation("org.mockito:mockito-core:5.10.0")
+    testImplementation("org.mockito:mockito-inline:3.7.0")
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+    androidTestImplementation("org.mockito:mockito-android:2.12.0")
+
     // Mine
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")

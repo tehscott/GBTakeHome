@@ -20,11 +20,11 @@ class GuideHelperImpl @Inject constructor(
                     response.body()?.let { responseBody ->
                         runCatching {
                             guides = responseBody.guides.map { it.toDomain() }
-                        }.getOrThrow()
+                        }
                     }
                 }
             }
-        }.getOrThrow()
+        }.getOrNull()
 
         return flowOf(guides)
     }
